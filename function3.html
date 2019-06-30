@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style type="text/css"></style>
+</head>
+<body>
+        <script type="text/javascript">
+            function alphabetSort(message){
+            // wirte your code here
+                var arr = message.split('');
+                var i;
+                var min = arr[0];
+                for(i = 0;i < arr.length;i++){
+                    if(arr[i] < min){
+                        let temp = arr[i];
+                        arr[i] = min;
+                        min = temp;
+                    }
+                }
+                document.write(arr);
+            }
+            alphabetSort('hello'); // should return 'ehllo'
+        </script>
+</body>
+</html>
